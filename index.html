@@ -1,119 +1,219 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>PixelFest 2026</title>
+<meta charset="UTF-8">
 
-  <!-- ERROR: falta viewport -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<!-- CORRECCIÓN: viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<title>PixelFest 2026</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <!-- ERROR: falta container -->
-    <a class="navbar-brand" href="#">PixelFest</a>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
 
-    <!-- ERROR: toggler apunta a un id incorrecto -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<a class="navbar-brand" href="#">PixelFest</a>
 
-    <!-- ERROR: este id no coincide -->
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Actividades</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Boletos</a></li>
-      </ul>
-    </div>
-  </nav>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
 
-  <!-- HERO -->
-  <section class="bg-light">
-    <!-- ERROR: falta container y spacing -->
-    <h1>Bienvenido a PixelFest 2026</h1>
-    <p>El evento definitivo de videojuegos, cosplay, tecnología y streaming.</p>
-    <a href="#" class="btn btn-primary">Comprar ahora</a>
-  </section>
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
 
-  <!-- SECCIÓN ACTIVIDADES -->
-  <section id="actividades">
-    <div class="container">
-      <h2>Actividades principales</h2>
+<li class="nav-item">
+<a class="nav-link" href="#inicio">Inicio</a>
+</li>
 
-      <!-- ERROR: sin g-4 -->
-      <div class="row">
+<li class="nav-item">
+<a class="nav-link" href="#actividades">Actividades</a>
+</li>
 
-        <!-- ERROR: estrategia de columnas débil -->
-        <div class="col-md-4">
-          <!-- ERROR: sin h-100 ni shadow -->
-          <div class="card">
-            <!-- ERROR: imagen sin control responsivo adicional -->
-            <img src="https://via.placeholder.com/600x300" class="card-img-top" alt="Torneo">
-            <div class="card-body">
-              <h5 class="card-title">Torneos</h5>
-              <p class="card-text">Compite en distintos videojuegos.</p>
-              <a href="#" class="btn btn-outline-primary">Ver más</a>
-            </div>
-          </div>
-        </div>
+<li class="nav-item">
+<a class="nav-link" href="#boletos">Boletos</a>
+</li>
 
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/600x300" class="card-img-top" alt="Cosplay">
-            <div class="card-body">
-              <h5 class="card-title">Cosplay</h5>
-              <p class="card-text">Concurso y pasarela de personajes.</p>
-              <a href="#" class="btn btn-outline-primary">Ver más</a>
-            </div>
-          </div>
-        </div>
+<li class="nav-item">
+<a class="nav-link" href="#contacto">Contacto</a>
+</li>
 
-        <!-- ERROR: card con mucho más texto para romper alturas -->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/600x300" class="card-img-top" alt="Streaming">
-            <div class="card-body">
-              <h5 class="card-title">Streaming Zone</h5>
-              <p class="card-text">
-                Espacio dedicado a creadores de contenido, streamers invitados, sesiones de preguntas,
-                charlas, comunidad, convivencia, experiencias interactivas y actividades especiales.
-              </p>
-              <a href="#" class="btn btn-outline-primary">Ver más</a>
-            </div>
-          </div>
-        </div>
+</ul>
+</div>
 
-      </div>
-    </div>
-  </section>
+</div>
+</nav>
 
-  <!-- BOLETOS -->
-  <section id="boletos" class="bg-light">
-    <div class="container">
-      <h2>Boletos</h2>
-      <p>Compra tu acceso general o premium.</p>
-      <!-- ERROR: link sin navegación real -->
-      <a href="#" class="btn btn-success">Ir a compra</a>
-    </div>
-  </section>
 
-  <!-- CONTACTO -->
-  <section id="contacto">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>Escríbenos para más información del evento.</p>
-    </div>
-  </section>
+<!-- HERO -->
+<section id="inicio" class="bg-light py-5 text-center">
 
-  <footer class="bg-dark text-white text-center">
-    <p>PixelFest 2026</p>
-  </footer>
+<div class="container">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<h1 class="display-5 fw-bold">Bienvenido a PixelFest 2026</h1>
+
+<p class="lead">
+El evento definitivo de videojuegos, cosplay, tecnología y streaming.
+</p>
+
+<a href="#boletos" class="btn btn-primary btn-lg">
+Comprar ahora
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ACTIVIDADES -->
+<section id="actividades" class="py-5">
+
+<div class="container">
+
+<h2 class="text-center mb-4">Actividades principales</h2>
+
+<div class="row g-4">
+
+<!-- CARD 1 -->
+<div class="col-12 col-md-6 col-lg-4">
+
+<div class="card h-100 shadow-sm">
+
+<img src="https://th.bing.com/th/id/R.aaa8ed07e809e0062355f0fb12caccc2?rik=o2V5j9TdbsoHGg&riu=http%3a%2f%2fjournal.changwon.ac.kr%2fnews%2fphoto%2f202311%2f4113048_1741_5512.jpg&ehk=T0cq1vpweD1q4%2f%2fVxuL9c6Dup7Bo8S2566MtTFnkpWM%3d&risl=&pid=ImgRaw&r=0"
+class="card-img-top img-fluid"
+alt="Torneos">
+
+<div class="card-body d-flex flex-column">
+
+<h5 class="card-title">Torneos</h5>
+
+<p class="card-text">
+Compite en distintos videojuegos y demuestra tus habilidades.
+</p>
+
+<a href="#boletos" class="btn btn-outline-primary mt-auto">
+Ver más
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- CARD 2 -->
+<div class="col-12 col-md-6 col-lg-4">
+
+<div class="card h-100 shadow-sm">
+
+<img src="https://www.theconstantrambler.com/wp-content/uploads/2021/08/cosplay-travel.jpeg"
+class="card-img-top img-fluid"
+alt="Cosplay">
+
+<div class="card-body d-flex flex-column">
+
+<h5 class="card-title">Cosplay</h5>
+
+<p class="card-text">
+Participa en el concurso de cosplay y muestra tu personaje favorito.
+</p>
+
+<a href="#boletos" class="btn btn-outline-primary mt-auto">
+Ver más
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- CARD 3 -->
+<div class="col-12 col-md-6 col-lg-4">
+
+<div class="card h-100 shadow-sm">
+
+<img src="https://tse4.mm.bing.net/th/id/OIP.XQRsimMR4Ol3tV4BLMstJAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+class="card-img-top img-fluid"
+alt="Streaming">
+
+<div class="card-body d-flex flex-column">
+
+<h5 class="card-title">Streaming Zone</h5>
+
+<p class="card-text">
+Espacio para creadores de contenido con invitados, charlas y sesiones
+interactivas con la comunidad.
+</p>
+
+<a href="#boletos" class="btn btn-outline-primary mt-auto">
+Ver más
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- BOLETOS -->
+<section id="boletos" class="bg-light py-5">
+
+<div class="container text-center">
+
+<h2>Boletos</h2>
+
+<p class="mb-4">
+Compra tu acceso general o premium para PixelFest 2026.
+</p>
+
+<a href="#contacto" class="btn btn-success btn-lg">
+Ir a compra
+</a>
+
+</div>
+
+</section>
+
+
+<!-- CONTACTO -->
+<section id="contacto" class="py-5">
+
+<div class="container text-center">
+
+<h2>Contacto</h2>
+
+<p>
+Escríbenos para más información del evento PixelFest 2026.
+</p>
+
+</div>
+
+</section>
+
+
+<footer class="bg-dark text-white text-center py-3">
+
+<p class="mb-0">PixelFest 2026</p>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
